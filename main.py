@@ -16,7 +16,7 @@ class Director:
         self._bulder.add_paragraph('А именно:')
         self._bulder.add_list_numerated([
             'Как приготовить безе из питона',
-            'Как повестить картину на плюсах',
+            'Как повесить картину на плюсах',
             'Как выстрелить себе в ногу'
         ])
         site = self._bulder.get_site()
