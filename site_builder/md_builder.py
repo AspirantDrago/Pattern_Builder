@@ -6,7 +6,7 @@ from .md_site import MarkDownSite
 
 class MarkDownBuilder(AbstractBuilder):
     """
-    Класс MarkDownBuilder предназначен для создание текстовых документов.
+    Класс MarkDownBuilder предназначен для создания текстовых документов.
     MarkDownBuilder унаследован от класса AbstractBuilder.
     Создает файл формата .md (MarkDown).
     """
@@ -22,8 +22,8 @@ class MarkDownBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_header(self, text: str, size: int = 1) -> None:
         """
-        Функкция по созданию загаловка.
-        Для этой функции используется дикоратор @AbstractBuilder.has_site.
+        Функция по созданию заголовка.
+        Для этой функции используется декоратор @AbstractBuilder.has_site.
         :param text: str
         :param size: int (По умолчанию = 1)
         :return: None
@@ -35,8 +35,8 @@ class MarkDownBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_paragraph(self, text: str) -> None:
         """
-        Функкция по добавлению параграфа.
-        Для этой функции используется дикоратор @AbstractBuilder.has_site.
+        Функция по добавлению параграфа.
+        Для этой функции используется декоратор @AbstractBuilder.has_site.
         :param text: str
         :return: None
         """
@@ -45,8 +45,8 @@ class MarkDownBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_text(self, text: str) -> None:
         """
-        Функкция по добавлению текста.
-        Для этой функции используется дикоратор @AbstractBuilder.has_site.
+        Функция по добавлению текста.
+        Для этой функции используется декоратор @AbstractBuilder.has_site.
         :param text: str
         :return: None
         """
@@ -55,8 +55,8 @@ class MarkDownBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_bold_text(self, text: str) -> None:
         """
-        Функкция по добавлению текста жирным шрифтом.
-        Для этой функции используется дикоратор @AbstractBuilder.has_site.
+        Функция по добавлению текста жирным шрифтом.
+        Для этой функции используется декоратор @AbstractBuilder.has_site.
         :param text: str
         :return: None
         """
@@ -65,8 +65,8 @@ class MarkDownBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_italic_text(self, text: str) -> None:
         """
-        Функкция по добавлению текста курсивом.
-        Для этой функции используется дикоратор @AbstractBuilder.has_site.
+        Функция по добавлению текста курсивом.
+        Для этой функции используется декоратор @AbstractBuilder.has_site.
         :param text: str
         :return: None
         """
@@ -75,8 +75,8 @@ class MarkDownBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_bold_italic_text(self, text: str) -> None:
         """
-        Функкция по добавлению текста курсивом и жирным шрифтом.
-        Для этой функции используется дикоратор @AbstractBuilder.has_site.
+        Функция по добавлению текста курсивом и жирным шрифтом.
+        Для этой функции используется декоратор @AbstractBuilder.has_site.
         :param text: str
         :return: None
         """
@@ -85,8 +85,8 @@ class MarkDownBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_list_numerated(self, items: Iterable[str]) -> None:
         """
-        Функкция по добавлению номерации страницы.
-        Для этой функции используется дикоратор @AbstractBuilder.has_site.
+        Функция по добавлению нумерации страницы.
+        Для этой функции используется декоратор @AbstractBuilder.has_site.
         :param items: Iterable[str]
         :return: None
         """
@@ -98,8 +98,8 @@ class MarkDownBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_list_marked(self, items: Iterable[str]) -> None:
         """
-        Функкция по добавлению маркерованного текста.
-        Для этой функции используется дикоратор @AbstractBuilder.has_site.
+        Функция по добавлению маркированного текста.
+        Для этой функции используется декоратор @AbstractBuilder.has_site.
         :param items: Iterable[str]
         :return: None
         """
@@ -111,8 +111,8 @@ class MarkDownBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_item_of_list(self, text: str) -> None:
         """
-        Функкция по добавлению элемента на страницу.
-        Для этой функции используется дикоратор @AbstractBuilder.has_site.
+        Функция по добавлению элемента на страницу.
+        Для этой функции используется декоратор @AbstractBuilder.has_site.
         :param text: str
         :return: None
         """
