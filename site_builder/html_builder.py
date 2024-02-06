@@ -9,7 +9,7 @@ class HTMLBuilder(AbstractBuilder):
     """Класс для создания и заполнения HTML сайта"""
     def create_site(self, name: str) -> None:
         """
-            Метод который создает HTML файл с базовой разметкой
+            Метод, который создает HTML файл с базовой разметкой
             :param name: Название html файла
             :type name: str
         """
@@ -92,7 +92,7 @@ class HTMLBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_list_numerated(self, items: Iterable[str]) -> None:
         """
-            Добавляет нумеровнанный спискок (<ol>)
+            Добавляет нумерованный список (<ol>)
             :param items: список элементов
             :type items: Iterable
         """
@@ -104,7 +104,7 @@ class HTMLBuilder(AbstractBuilder):
     @AbstractBuilder.has_site
     def add_list_marked(self, items: Iterable[str]) -> None:
         """
-            Добавляет маркерованный спискок (<ul>)
+            Добавляет маркированный список (<ul>)
             :param items: список элементов
             :type items: Iterable
         """
